@@ -1,0 +1,144 @@
+.order-screen__nav-row {
+  display: flex;
+  align-items: center;
+}
+
+.order-screen__nav-row--back-button {
+  transition: all 0.3s ease-in;
+}
+
+.order-screen__nav-row--back-button:hover {
+  transform: scale(0.85);
+}
+
+.order-screen__title {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.order-screen__order-steps {
+  margin: auto;
+}
+
+.order-screen-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-screen-card__image {
+  max-width: 200px;
+  height: auto;
+  box-shadow: 5px 5px 3px 0px rgba(87, 86, 86, 0.47);
+}
+
+.order-screen-card__productWeightSelector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.order-screen__weight-button {
+  border-radius: 100%;
+} 
+
+.order-screen__weight-button:hover {
+  transform: scale(1.25);
+}
+
+.order-screen__weight-button:active {
+  transform: scale(0.9);
+  transition: transform 0.1s; 
+}
+
+.order-screen__price-info {
+  display: flex;
+  justify-content: center;
+}
+
+.tasting-selector {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.tasting-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.tasting-form-button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #333333;
+  border: 2px solid #333333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 0.5rem;
+}
+
+.tasting-form-button:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.tasting-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tasting-item {
+  padding: 0px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65px;
+  background-color: white;
+  border: 1px solid black;
+  transition: all 0.3 ease-in-out;
+}
+
+.tasting-item:hover {
+  transform: scale(0.95);
+  background-color: rgb(87, 220, 29);
+}
+
+.tasting-image {
+  width: 65px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.tasting-name {
+  font-size: 0.65rem;
+  text-align: center;
+}
+
+.order-screen-final-price__button {
+  max-width: 200px;
+  border-radius: 0px;
+  border: 1px solid black;
+}
+
+.order-screen-final-price__button:hover {
+  color: white;
+  background-color: rgb(48, 50, 48);
+  transform: scale(1.05);
+}
+
+.order-screen__client-wishes {
+  padding: 10px 20px;
+  resize: none;
+  overflow: hidden;
+}
+
+textarea::placeholder {
+  color: #999;
+  text-align: center;
+}

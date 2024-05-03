@@ -1,0 +1,14 @@
+.contacts-modal__title {
+  margin-bottom: 0.75rem;
+}
+
+.contacts-modal__contact--phone, .contacts-modal__contact--mail {
+  text-decoration: none;
+  color:black;
+}
+
+textarea::placeholder {
+  color: #999; 
+  padding: 10px;
+  text-align: center;
+}

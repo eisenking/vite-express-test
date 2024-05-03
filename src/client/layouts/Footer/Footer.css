@@ -1,0 +1,26 @@
+.footer__info-links {
+  transition: 0.3s ease-in;
+}
+.footer__info-links:hover {
+  transform: scale(0.95);
+  color:black;
+}
+
+.footer__contacts-links {
+  transition: 0.3s ease-in;
+}
+
+.footer__contacts-links:hover {
+  transform: scale(0.975);
+  color: black;
+}
+
+.footer__contacts-links a {
+  text-decoration: none;
+  color: rgb(102, 101, 101);
+}
+
+.footer__contacts-links--phone:hover, .footer__contacts-links--mail:hover, .footer__contacts-links--policy:hover, .footer__contacts-links--whatsapp:hover, .footer__contacts-links--address:hover {
+  transform: scale(0.97);
+  color: rgb(24, 24, 24);
+}

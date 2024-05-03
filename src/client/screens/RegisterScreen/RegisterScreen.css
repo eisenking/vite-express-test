@@ -1,0 +1,21 @@
+.register-screen__gift-box-icon {
+    width: 60px;
+    height: 60px;
+    animation: shake 0.7s ease infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0) rotate(0); } /* Start with no translation */
+    25% { transform: translateX(-5px) rotate(-5deg); } /* Move left and rotate left */
+    50% { transform: translateX(5px) rotate(5deg); } /* Move right and rotate right */
+    75% { transform: translateX(-5px) rotate(-5deg); } /* Move left and rotate left */
+    100% { transform: translateX(0) rotate(0); } /* Back to the original position */
+}
+
+@media only screen and (max-width: 320px) {
+    .register-screen__gift-box-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+}

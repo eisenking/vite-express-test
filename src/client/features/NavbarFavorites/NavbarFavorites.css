@@ -1,0 +1,9 @@
+.navbar-favorites--link {
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    color: black;
+}
+
+.navbar-favorites--link:hover {
+    transform: scale(0.95);
+}

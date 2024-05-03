@@ -1,0 +1,35 @@
+.delivery-info {
+  margin: 20px;
+}
+
+.delivery-heading {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.delivery-option {
+  margin-bottom: 20px;
+}
+
+.delivery-option h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.delivery-note {
+  margin-top: 20px;
+}
+
+.contact-number {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.delivery-recommendations {
+  margin-top: 20px;
+}
+
+.delivery-recommendations li {
+  margin-bottom: 10px;
+}

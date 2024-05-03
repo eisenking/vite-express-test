@@ -1,0 +1,22 @@
+.payment-info {
+  margin: 20px;
+}
+
+.payment-heading {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.payment-info p {
+  margin-bottom: 10px;
+}
+
+.attention-section {
+  margin-top: 20px;
+}
+
+.attention-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}

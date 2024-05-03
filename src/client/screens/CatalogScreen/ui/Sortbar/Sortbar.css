@@ -1,0 +1,54 @@
+.bottom-border {
+  border-bottom: 1px solid gray;
+}
+
+.btn-custom {
+  border-radius: 0% !important;
+  border-bottom: 1px solid gray !important;
+}
+
+.btn-custom:hover {
+  transform: scale(1.02);
+  border-bottom: 1px solid rgb(133, 2, 2) !important;
+}
+
+.active {
+  border-bottom: none !important;
+}
+
+.active:focus {
+  border-bottom: none !important;
+}
+
+.active:hover {
+  border-bottom: none !important;
+}
+
+.btn-custom:active {
+  border-bottom: none !important;
+}
+
+.btn-custom:focus {
+  color: rgb(77, 77, 77);
+}
+
+.catalog-screen__subcategory-button:hover{
+  transform: scale(1.02);
+}
+
+.catalog-cover-selector {
+  color: #000 !important;
+ }
+.catalog-cover-selector:hover {
+  color: #000 !important;
+}
+.catalog-cover-selector:active {
+  color: #000 !important;
+}
+.catalog-cover-selector > a {
+  color: #000 !important;
+}
+ 
+.coversAndSearch {
+  padding: 1rem;
+}

@@ -1,0 +1,89 @@
+.delivery-screen__nav-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.delivery-screen__nav-row--back-button {
+  transition: all 0.3s ease-in;
+}
+
+.delivery-screen__nav-row--back-button:hover {
+  transform: scale(0.85);
+}
+
+.delivery-screen__nav-row--current-product {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.delivery-screen__nav-row--current-product--info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.delivery-screen__card--body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.delivery-screen__card--inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.delivery-screen__deliveryType {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form-check-input:checked {
+  background-color: #2371e6;
+  border-color: #1541c6;
+}
+
+textarea::placeholder {
+  color: #999; 
+  padding: 15px;
+  text-align: center;
+}
+
+/* .react-datepicker {
+  touch-action: none;
+} */
+
+.react-datepicker__navigation--previous {
+  top: 15px !important;
+}
+
+.react-datepicker__navigation--next {
+  top: 15px !important;
+}
+
+.delivery-screen__final-order {
+  border-radius: 0px;
+  border: 1px solid black;
+}
+
+.delivery-screen__final-order:hover{
+  color: white;
+  background-color: rgb(48, 50, 48);
+  transform: scale(1.05);
+}
+
+.delivery-screen__error-message {
+  max-width: 350px;
+  color: #f21e08;
+  padding: 2px 0;
+  margin-top: 2px;
+  font-size: 15px;
+  font-weight: 300;
+}

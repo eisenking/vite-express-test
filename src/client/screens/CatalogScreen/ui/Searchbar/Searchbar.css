@@ -1,0 +1,16 @@
+.catalog-cover-selector {
+ color: #000 !important;
+}
+.catalog-cover-selector:hover {
+  color: #000 !important;
+ }
+.catalog-cover-selector:active {
+  color: #000 !important;
+ }
+.catalog-cover-selector > a {
+  color: #000 !important;
+ }
+
+.coversAndSearch {
+  padding: 1rem;
+}

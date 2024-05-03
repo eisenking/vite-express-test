@@ -1,0 +1,12 @@
+.custom-button {
+    border-radius: 0px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.custom-button:hover {
+    color: white;
+    background-color: rgb(48, 50, 48);
+    transform: scale(0.95);
+}

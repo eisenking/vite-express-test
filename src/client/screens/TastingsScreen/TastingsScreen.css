@@ -1,0 +1,80 @@
+.tastings-section {
+  padding: 20px;
+}
+.tasting-section__tasting-card {
+  
+}
+.tastings-section__title {
+
+}
+
+.tastings-section__subtitle {
+  font-style: italic;
+  color: rgb(73, 73, 73);
+}
+
+.tasting-section__tasting-image {
+  max-height: 380px;
+  /* max-width: 155px; */
+}
+
+.tasting-section__tasting-info {
+  color:beige;
+  background-color: rgba(109, 109, 109, 0.6);
+  position: relative;
+  top: -24px;
+}
+
+.tasting-section__tasting-desc-container {
+  padding-top: 0px !important;
+}
+
+.tasting-section__tasting-description {
+  --max-lines: 3;
+  --line-height: 1.4;
+  position: relative;
+  overflow: hidden;
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  line-height: var(--line-height);
+}
+
+.tasting-section__tasting-description:has(+ .tasting-section__tasting-expand-button:not(:checked)):before {
+  content: "";
+  position: absolute;
+  height: calc(1em * var(--line-height));
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+.tasting-section__tasting-ingredients {
+  display: block;
+}
+
+.tasting-section__tasting-expand-button {
+  appearance: none;
+  padding: 0.5em;
+  border: 1px solid black;
+  border-radius: 0em;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.tasting-section__tasting-expand-button:hover {
+  color: white;
+  background-color: #090909;
+  transform: scale(0.95);
+}
+
+.tasting-section__tasting-expand-button::before {
+  content: "Подробнее"
+}
+
+.tasting-section__tasting-expand-button:checked::before {
+  content: "Закрыть"
+}
+
+.tasting-section__tasting-description:has(+ .tasting-section__tasting-expand-button:checked) {
+  max-height: none;
+}

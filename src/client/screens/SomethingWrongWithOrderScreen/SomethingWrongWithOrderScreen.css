@@ -1,0 +1,9 @@
+.something-went-wrong-screen__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+.something-went-wrong-screen__socials--phone {
+    color: black;
+}

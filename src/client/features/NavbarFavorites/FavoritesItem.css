@@ -1,0 +1,7 @@
+.navbar-favorites a {
+  text-decoration: none;
+}
+
+.navbar-favorites__name {
+  color: black;
+}

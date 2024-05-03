@@ -1,0 +1,43 @@
+.category-preview-section {
+  position: relative;
+  top: -150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cate
+
+.card-description {
+  --max-lines: 3;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-lines);
+}
+
+.category-preview-section__title {
+  font-family: Cormorant Garamond;
+  font-size: clamp(1.25rem, 4vw, 2.5rem);
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+
+.category-preview-section__card {
+  transition: all 0.3s ease-in-out;
+}
+
+.category-preview-section__card:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.6); 
+  transform: scale(0.95);
+}
+
+.category-preview-section__card--title {
+  color: azure;
+}
+
+.category-preview-section__card--description {
+  color: azure;
+}

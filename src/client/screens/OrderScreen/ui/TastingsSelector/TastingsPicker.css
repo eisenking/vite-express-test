@@ -1,0 +1,10 @@
+.tier-button-1, .tier-button-2, .tier-button-3 {
+  
+}
+
+
+.tastings-container-1, .tastings-container-2, .tastings-container-3 {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

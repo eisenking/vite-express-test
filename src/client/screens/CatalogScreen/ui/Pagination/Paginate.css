@@ -1,0 +1,19 @@
+.page-item, .page-link {
+  color:black !important;
+  background: transparent;
+}
+
+.page-item.active {
+  color: black !important;
+  background-color: rgb(252, 252, 252) !important;
+  border-color: black !important;
+}
+
+.page-link {
+  background-color: rgb(251, 250, 250) !important;
+  border-color: black !important;
+}
+
+.active>.page-link, .page-link.active {
+  background-color: rgb(237, 235, 235) !important;
+}

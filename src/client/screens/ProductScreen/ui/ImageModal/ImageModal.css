@@ -1,0 +1,11 @@
+.product-screen-image-modal__button--close {
+    border-radius: 0px;
+    border: 1px solid black;
+  }
+  
+  .product-screen-image-modal__button--close:hover {
+    color: white;
+    background-color: rgb(48, 50, 48);
+    transform: scale(1.05);
+  }
+  

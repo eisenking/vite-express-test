@@ -1,0 +1,72 @@
+.why-us-section {
+  position: relative;
+  top: -150px;
+}
+
+.why-us-section__title {
+  display: flex;
+}
+
+.why-us-section__title--text {
+  font-family: Cormorant Garamond;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0px 40px;
+  margin-bottom: 0px !important;
+}
+
+.why-us-section__steps {
+  padding: 20px;
+}
+
+.why-us-section__step {
+  display: flex;
+  align-items: baseline;
+  font-family: Cormorant Garamond;
+  font-size: clamp(1rem, 1.75vw, 2rem);
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0.5rem;
+ }
+
+.why-us-section__step--text {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.why-us-section__step--link {
+  display: inline-block;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.why-us-section__step--link:hover {
+transform: scale(0.95);
+}
+
+.why-us-section__step--number {
+  margin-right: 5px;
+  font-family: Cormorant Garamond;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 78px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.why-us-section__image {
+  padding: 30px;
+}
+
+.carousel {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .why-us-section__info {
+    flex-direction: column-reverse;
+  }
+}

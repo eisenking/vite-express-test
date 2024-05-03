@@ -1,34 +1,27 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import './App.css'
+import '../../src/client/fonts.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
+// import '@mantine/carousel/styles.css';
+import { Container } from 'react-bootstrap';
+import { Outlet } from 'react-router-dom';
+import { Navbar } from './layouts/Navbar/Navbar.jsx';
+import Footer from './layouts/Footer/Footer.jsx';
+import ScrollToTop from './features/ScrollToTop/ScrollToTop.jsx';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR!
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  );
+    <>
+    <ScrollToTop />
+    <Container className='d-flex flex-column'>
+      <Navbar />
+      <main className='main flex-grow-1'>
+          <Outlet />
+      </main>
+      <Footer className='' />
+    </Container>
+    </>
+  )
 }
 
-export default App;
+export default App
