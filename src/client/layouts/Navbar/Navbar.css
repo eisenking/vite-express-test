@@ -21,7 +21,7 @@
 
 .navbar-user {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .navbar-user-name {
@@ -74,6 +74,10 @@
     transform: translate(-75%, 15%) rotate(45deg);
     background-color: red;
 }
+.heart-order-bag-icon {
+    bottom: -9px;
+    right: -11px;
+}
 
 .heart-shape::before,
 .heart-shape::after {
@@ -121,7 +125,7 @@
 }
 
 .heart-container__gift-box {
-    bottom: -9px;
+    bottom: -7px;
     right: -2px;
 }
 

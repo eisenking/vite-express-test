@@ -13,6 +13,8 @@ import { ReactComponent as Logo } from "../../assets/icons/k-tort-logo.svg"
 import { ReactComponent as Heart } from "../../assets/icons/navbar-favorites-heart-icon.svg"
 import { ReactComponent as GiftBox } from "../../assets/icons/navbar-gift-icon.svg"
 import { ReactComponent as User } from "../../assets/icons/user-icon.svg"
+import OrderBagIcon from "../../../../public/assets/icons/OrderBagIcon";
+
 import NavbarFavorites from "../../features/NavbarFavorites/NavbarFavorites";
 import '../../fonts.css';
 import "./Navbar.css"
@@ -102,7 +104,9 @@ export function Navbar() {
                       <div className="navbar-user__profile">
                         <NavDropdown title={userInfo.name} id='username'>
                           <LinkContainer to='/profile'>
-                            <NavDropdown.Item>Профиль</NavDropdown.Item>
+                            <NavDropdown.Item>
+                              Профиль
+                            </NavDropdown.Item>
                           </LinkContainer>
                           <NavDropdown.Item onClick={logoutHandler}>
                             Выйти
@@ -154,10 +158,10 @@ export function Navbar() {
                         className="shoping-cart-button"
                         onFocus={(e) => e.target.blur()}                  
                       >
-                        <ShoppingCartIcon />
+                        <OrderBagIcon />
                         <div
                           id="heart"
-                          className="heart-shape-shopping d-flex justify-content-center align-items-center"
+                          className="heart-shape heart-order-bag-icon d-flex justify-content-center align-items-center"
                         >
                           <div className="navbar-qty">
                             0

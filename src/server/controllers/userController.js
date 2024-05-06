@@ -6,9 +6,9 @@ import User from '../models/userModel.js';
 // @route   POST /api/users/auth
 // @access  Public
 const authUser = asyncHandler(async (req, res) => {
-  const { email, password } = req.body;
+  const { phone, password } = req.body;
 
-  const user = await User.findOne({ email });
+  const user = await User.findOne({ phone });
   console.log('user', user)
 
   if (user && (await user.matchPassword(password))) {
@@ -17,12 +17,12 @@ const authUser = asyncHandler(async (req, res) => {
     res.json({
       _id: user._id,
       name: user.name,
-      email: user.email,
+      phone: user.phone,
       isAdmin: user.isAdmin,
     });
   } else {
     res.status(401);
-    throw new Error('Invalid email or password');
+    throw new Error('Invalid phone or password');
   }
 });
 

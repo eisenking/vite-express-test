@@ -22,8 +22,8 @@ import Heart from '../../assets/icons/Heart.jsx';
 
 import ImageModal from './ui/ImageModal/ImageModal.jsx';
 import CustomButton from '../../components/CustomButton/CustomButtom.jsx';
-import './ProductScreen.css';
 import LeftArrow from '../../../../public/assets/icons/LeftArrow.jsx';
+import './ProductScreen.css';
 
 const ProductScreen = () => {
   const { id: productId } = useParams();

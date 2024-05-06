@@ -38,7 +38,7 @@ const DeliveryScreen = () => {
   const guestInfo = {
     _id:"123456789123456789012345",
     name:"Гость",
-    email:"niceracer@yandex.ru",
+    phone:"89199640871",
     isAdmin:false,
   }
 
@@ -79,6 +79,7 @@ const DeliveryScreen = () => {
     const res = await createOrder({
       order: { 
         name: data.name,
+        weight: order.orderWeight,
         tastings: order.selectedTastings,
         deliveryDate: startDate,
         price: data.price,
@@ -262,21 +263,6 @@ const DeliveryScreen = () => {
                         />
                         {errors.name && <span className="delivery-screen__error-message">{errors.name.message}</span>}
                       </Form.Group>
-                      <Form.Group className="text-center" controlId="email">
-                        <Form.Label>Электронная почта</Form.Label>
-                        <Form.Control
-                          type="email"
-                          placeholder="Электронная почта"
-                          {...register("email", {
-                            required: "Пожалуйста, введите Вашу электронную почту",
-                            pattern: {
-                              value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
-                              message: "Пожалуйста, введите правильную электронную почту"
-                            }
-                          })}
-                        />
-                        {errors.email && <span className="delivery-screen__error-message">{errors.email.message}</span>}
-                      </Form.Group>
                       <Form.Group className="text-center" controlId="phone">
                         <Form.Label>Телефон</Form.Label>
                         <Form.Control
@@ -291,6 +277,21 @@ const DeliveryScreen = () => {
                           })}
                         />
                         {errors.phone && <span className="delivery-screen__error-message">{errors.phone.message}</span>}
+                      </Form.Group>
+                      <Form.Group className="text-center" controlId="email">
+                        <Form.Label>Электронная почта</Form.Label>
+                        <Form.Control
+                          type="email"
+                          placeholder="Электронная почта"
+                          {...register("email", {
+                            required: "Пожалуйста, введите Вашу электронную почту",
+                            pattern: {
+                              value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
+                              message: "Пожалуйста, введите правильную электронную почту"
+                            }
+                          })}
+                        />
+                        {errors.email && <span className="delivery-screen__error-message">{errors.email.message}</span>}
                       </Form.Group>
                     </div>
                 </Card.Body>
