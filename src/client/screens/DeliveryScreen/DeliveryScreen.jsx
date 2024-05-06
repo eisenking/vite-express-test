@@ -93,6 +93,7 @@ const DeliveryScreen = () => {
     console.log(errors);
     navigate('/thankyou')
   } catch (err) {
+    console.log(order);
     console.log(err);
     navigate(`/sorry`);
   }
